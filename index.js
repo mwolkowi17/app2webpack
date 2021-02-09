@@ -120,11 +120,11 @@ var app = new Vue({
       this.licznik.planszeAlicz++
 
       this.plansza1.src = planszeA[this.licznik.planszeAlicz];
-      if (this.licznik.planszeAlicz === 5) {
+      if (this.licznik.planszeAlicz === 6) {
         this.video.seen = true;
         this.plansza1.seen = false;
       }
-      if (this.licznik.planszeAlicz === 6) {
+      if (this.licznik.planszeAlicz === 7) {
         this.planszeAlicz = 0;
         this.plansza1.src = planszeA[this.licznik.planszeAlicz];
         this.ikon1.seen = true;

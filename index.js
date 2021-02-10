@@ -165,7 +165,8 @@ var app = new Vue({
       this.plansza1.src = planszeA[this.licznik.planszeAlicz];
     },
     btnforB: function () {
-      if (this.appbackground.src != planszeB[0]) {
+      //if (this.appbackground.src != planszeB[0]) {
+        if (this.appbackground.src != backgrounds[2]) {
         this.licznik.planszeBlicz++;
       }
 
@@ -177,7 +178,7 @@ var app = new Vue({
 
       this.appbackground.src = this.planszeTypB.src[this.licznik.planszeBlicz];
 
-      if (this.licznik.planszeBlicz === 11) {
+      if (this.licznik.planszeBlicz === 8) {
         this.licznik.planszeBlicz = 0;
         this.ikon1.seen = true;
         this.appbackground.src = backgrounds[0];

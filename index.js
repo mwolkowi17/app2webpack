@@ -177,6 +177,7 @@ var app = new Vue({
 
 
       this.appbackground.src = this.planszeTypB.src[this.licznik.planszeBlicz];
+     
 
       if (this.licznik.planszeBlicz === 8) {
         this.licznik.planszeBlicz = 0;
@@ -223,6 +224,8 @@ var app = new Vue({
       if (this.video.seen === false) {
         this.licznik.planszeClicz++;
         this.appbackground.src = this.planszeTypC.src[this.licznik.planszeClicz];
+        console.log('licznik');
+        console.log(this.licznik.planszeClicz);
       }
 
       if (this.licznik.planszeClicz === 0) {
@@ -233,7 +236,7 @@ var app = new Vue({
 
       }
       if (this.licznik.planszeClicz === 8) {
-        this.licznik.planszeBlicz = 0;
+        this.licznik.planszeClicz = 0;
         this.ikon1.seen = true;
         this.appbackground.src = backgrounds[0];
         this.ikon2.seen = true;
